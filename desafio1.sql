@@ -17,7 +17,7 @@ CREATE TABLE SpotifyClone.album(
     album_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     album_name VARCHAR(30) NOT NULL,
     artist_id INT NOT NULL,
-    FOREIGN KEY (artist_id) REFERENCES artist (artist_id),
+    FOREIGN KEY (artist_id) REFERENCES SpotifyClone.artist (artist_id),
     CONSTRAINT PRIMARY KEY(artist_id),
 ) engine = InnoDB;
 
@@ -28,8 +28,8 @@ CREATE TABLE SpotifyClone.song(
     song_years YEAR NOT NULL,
     artist_id INT NOT NULL,
     album_id INT NOT NULL,
-    FOREIGN KEY (artist_id) REFERENCES artist (artist_id),
-    FOREIGN KEY (album_id) REFERENCES album (album_id),
+    FOREIGN KEY (artist_id) REFERENCES SpotifyClone.artist (artist_id),
+    FOREIGN KEY (album_id) REFERENCES SpotifyClone.album (album_id),
     CONSTRAINT PRIMARY KEY(artist_id, album_id),
 ) engine = InnoDB;
 
@@ -39,7 +39,7 @@ CREATE TABLE SpotifyClone.users(
     users_age INT NOT NULL,
     plan_id INT NOT NULL,
     users_plan_date DATE NOT NULL,
-    FOREIGN KEY (plan_id) REFERENCES plan (plan_id),
+    FOREIGN KEY (plan_id) REFERENCES SpotifyClone.plan (plan_id),
     CONSTRAINT PRIMARY KEY(plan_id),
 ) engine = InnoDB;
 
@@ -48,8 +48,8 @@ CREATE TABLE SpotifyClone.reproduction(
     reproduction_date DATE NOT NULL,
     song_id INT NOT NULL,
     users_id INT NOT NULL,
-    FOREIGN KEY (song_id) REFERENCES song (song_id),
-    FOREIGN KEY (users_id) REFERENCES users (users_id),
+    FOREIGN KEY (song_id) REFERENCES SpotifyClone.song (song_id),
+    FOREIGN KEY (users_id) REFERENCES SpotifyClone.users (users_id),
     CONSTRAINT PRIMARY KEY(song_id, users_id),
 ) engine = InnoDB;
 
@@ -57,8 +57,8 @@ CREATE TABLE SpotifyClone.following(
     following_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     artist_id INT NOT NULL,
     users_id INT NOT NULL,
-    FOREIGN KEY (artist_id) references artist (artist_id),
-    FOREIGN KEY (users_id) references users (users_id),
+    FOREIGN KEY (artist_id) references SpotifyClone.artist (artist_id),
+    FOREIGN KEY (users_id) references SpotifyClone.users (users_id),
     CONSTRAINT PRIMARY KEY(artist_id, users_id),
 ) engine = InnoDB;
 
