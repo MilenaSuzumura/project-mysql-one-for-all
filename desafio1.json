@@ -2,15 +2,15 @@
   "tabela_usuario": "users",
   "coluna_usuario": "name",
   "tabela_plano": "plan",
-  "coluna_plano": "plan-name",
+  "coluna_plano": "plan_name",
   "tabela_historico_de_reproducoes": "reproduction",
-  "coluna_historico_de_reproducoes": "reproduction-history",
+  "coluna_historico_de_reproducoes": "reproduction_history",
   "tabela_seguindo_artistas": "following",
-  "coluna_seguindo_artistas": "artists-following",
+  "coluna_seguindo_artistas": "artists_following",
   "tabela_artista": "artist",
-  "coluna_artista": "artist-name",
+  "coluna_artista": "artist_name",
   "tabela_album": "album",
-  "coluna_album": "album-name",
+  "coluna_album": "album_name",
   "tabela_cancoes": "song",
-  "coluna_cancoes": "song-name"
+  "coluna_cancoes": "song_name"
 }
