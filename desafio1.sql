@@ -87,14 +87,14 @@ VALUES
 INSERT INTO SpotifyClone.song (song_name, song_duration, song_years, artist_id, album_id)
 VALUES
   ('BREAK MY SOUL', 279, 2022, 1, 1),
-  ('VIRGOS GROOVE', 369, 2022, 1, 1),
+  ('VIRGO’S GROOVE', 369, 2022, 1, 1),
   ('ALIEN SUPERSTAR', 116, 2022, 1, 1),
-  ('Dont Stop Me Now', 203, 1978, 2, 2),
+  ('Don’t Stop Me Now', 203, 1978, 2, 2),
   ('Under Pressure', 152, 1982, 2, 3),
   ('Como Nossos Pais', 105, 1998, 3, 4),
   ('O Medo de Amar é o Medo de Ser Livre', 207, 2001, 3, 5),
   ('Samba em Paris', 267, 2003, 4, 6),
-  ('The Bards Song', 244, 2007, 5, 7),
+  ('The Bard’s Song', 244, 2007, 5, 7),
   ('Feeling Good', 100, 2012, 6, 8);
 
 INSERT INTO SpotifyClone.users (users_name, users_age, users_plan_date, plan_id)
