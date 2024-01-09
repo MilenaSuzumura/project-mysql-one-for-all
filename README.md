@@ -1,4 +1,4 @@
-# Project Mysql One For All
+# Mysql One For All
 
 Mysql One For All é um projeto focado em práticar a criação e modelação de tabelas, criação do banco de dados a partir de um DER, modificações necessárias para adequar as tabelas, analisar tabelas não normalizadas e criar queries utilizando comandos SQL.
 
