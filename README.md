@@ -16,7 +16,7 @@ Mysql One For All é um projeto focado em práticar a criação e modelação de
 ## Utilizando o docker
 Para criar os containers, execute: `docker-compose up -d`
 
-Para abrir o terminar do container, execute: `docker exec -it all_for_one bash`
+Para abrir o terminar do container, execute: `docker exec -it one_for_all bash`
 
 ## Instalando Dependências
   `npm install`
